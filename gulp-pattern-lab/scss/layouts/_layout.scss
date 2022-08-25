@@ -1,0 +1,37 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  @include proximaNova();
+  font-weight: normal;
+  font-size: $base-font-size; // Don't modify static unit.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+  color: $text-color;
+}
+
+body {
+  // Disable in production mode;
+  @if $debug == true {
+    @include show-breakpoints;
+  }
+  // font-size: rem(18px);
+  // @include font-face(Gilroy, fonts/Gilroy/Gilroy-Regular, 400, normal);
+  // font-family: Gilroy;
+  // font-weight: 400;
+}

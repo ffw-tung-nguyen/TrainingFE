@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$primary-color",
+              "id": "#3681D7"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$text-color",
+              "id": "#727272"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$dark-gray",
+              "id": "#2d2d2d"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$light-blue",
+              "id": "#6ED7F5"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$black",
+              "id": "#000"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$white",
+              "id": "#fff"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$silver",
+              "id": "#ccc"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$pigeon-post",
+              "id": "#aec9de"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

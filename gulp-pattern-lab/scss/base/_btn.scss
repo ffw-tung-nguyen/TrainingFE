@@ -1,0 +1,41 @@
+.btn {
+    font-family: "Gilroy", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: $blue;
+    border: rem(1px) solid $blue;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    padding: rem(9px) rem(27px);
+    text-decoration: none;
+    text-align: center;
+
+    &:active,
+    &:hover {
+      background-image: radial-gradient(circle at 0 0, #1481d7, #1ad6f5);
+      border: rem(1px) solid $white;
+    }
+
+    &--transparent {
+      background-color: transparent;
+      border: rem(3px) solid $white;
+
+      &:active,
+      &:hover {
+        border: rem(3px) solid $white;
+      }
+    }
+
+    &--radius {
+        border-radius: rem(50px);
+    }
+
+    &--small {
+        padding: rem(5px) rem(20px);
+    }
+
+    &--large {
+      min-width: rem(250px);
+    }
+}

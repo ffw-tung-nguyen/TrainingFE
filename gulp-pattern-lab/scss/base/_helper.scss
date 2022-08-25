@@ -1,0 +1,103 @@
+.text {
+    &--white {
+        color: $white;
+    }
+
+    &--blue {
+        color: $blue;
+    }
+
+    &--bold {
+        font-weight: 700;
+    }
+
+    &--semibold {
+        font-weight: 600;
+    }
+
+    &--medium {
+        font-weight: 500;
+    }
+
+    &--italic {
+        font-style: italic;
+    }
+}
+
+.font {
+    &--large {
+        font-size: rem(22px);
+    }
+
+    &--medium {
+        font-size: rem(20px);
+    }
+
+    &--nor {
+        font-size: rem(18px)
+    }
+
+    &--small {
+        font-size: rem(14px);
+    }
+}
+
+.link {
+    &--blue {
+        color: $blue;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
+    &--white {
+        color: $white;
+
+        &:hover {
+            color: $gray;
+        }
+    }
+
+    &--arrow {
+        &:after {
+            content: $icon-right-arrow;
+        }
+    }
+}
+
+.border {
+    &--white {
+        border: rem(3px) solid $white;
+    }
+}
+
+.bg {
+    &--dark-gray {
+        background-color: $dark-gray;
+
+        .link--arrow-right {
+            color: $white;
+
+            &:hover {
+                color: #cccccc;
+            }
+
+            &:after {
+                color: $white;
+
+                &:hover {
+                    color: #cccccc;
+                }
+            }
+        }
+    }
+
+    &--blue {
+        background-image: radial-gradient(circle at 0 0,#1381d7,#1ad6f5);;
+    }
+
+    &--light-gray {
+        background-color: $light-gray;
+    }
+}

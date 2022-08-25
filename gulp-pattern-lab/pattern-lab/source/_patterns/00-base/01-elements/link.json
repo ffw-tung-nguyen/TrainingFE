@@ -1,0 +1,19 @@
+
+{
+  "link": {
+    "class": "link",
+    "href": "#",
+    "text": "Read More"
+  },
+  "link": {
+    "class": "link link--arrow-right",
+    "href": "#",
+    "text": "Read More"
+  },
+  "link": {
+    "class": "link link--arrow-left",
+    "href": "#",
+    "text": "Read More"
+  }
+}
+

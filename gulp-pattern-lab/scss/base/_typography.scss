@@ -1,0 +1,194 @@
+// TYPOGRAPHY
+// Define all typographic styles in this file.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  @include gilroy();
+  color: $dark-gray;
+  margin-bottom: rem(30px);
+}
+
+h1,
+.h1 {
+  font-size: rem(49.5px);
+
+  @include susy-media(desktop) {
+    font-size: rem(54px)
+  }
+}
+
+h2,
+.h2 {
+  font-size: rem(20px);
+  letter-spacing: rem(.75px);
+
+  @include susy-media(desktop) {
+    font-size: rem(42px);
+    letter-spacing: 0;
+  }
+}
+
+h3,
+.h3 {
+  font-size: rem(32px);
+}
+
+h4,
+.h4 {
+  font-size: rem(30px);
+}
+
+h5,
+.h5 {
+  font-size: rem(26px);
+}
+
+h6,
+.h6 {
+  font-size: rem(22px);
+}
+
+
+.list{
+  ol{
+    padding-left: 20px;
+
+    li{
+      list-style-type:decimal;
+    }
+  }
+  ul{
+    li{
+      position: relative;
+      padding-left: rem(34px);
+      margin-bottom: rem(13px);
+      line-height: rem(30px);
+      &:before{
+        content:"";
+        background-color:$black;
+        width: rem(3px);
+        height: rem(3px);
+        top: rem(10px);
+        position:absolute;
+        left:0;
+        display:inline-block;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+a {
+  color: $blue;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: rem(17px);
+
+  &:hover,
+  &.hover {
+    opacity: .8;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    opacity: .8;
+  }
+}
+
+.link {
+  @extend a;
+  position: relative;
+
+  &--arrow-right {
+    &:after {
+      @include iconmoon;
+      content: $icon-right-arrow;
+      position: absolute;
+      margin-left: rem(17px);
+      font-size: rem(22px);
+      top: rem(-7px);
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+
+  &--arrow-left {
+    letter-spacing: rem(1px);
+    font-size: rem(14px);
+
+    &:before {
+      @include iconmoon;
+      content: $icon-left-arrow;
+      font-size: rem(14px);
+      margin-right: rem(10px);
+    }
+  }
+
+  &--dark-gray {
+    color: $dark-gray;
+    font-weight: 400;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+//Inline-element.
+sub, sup {
+  position: relative;
+  font-size: .75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: rem(-5px);
+}
+sub {
+  bottom: rem(-5px);
+}
+small {
+  font-size: rem(14px);
+}
+abbr {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+kbd {
+  padding: rem(5px) rem(10px);
+  color: $white;
+  background-color: $black;
+  border-radius: rem(5px);
+}
+q {
+  quotes: unset;
+  display: inline;
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+    content: close-quote;
+  }
+}
+code {
+  font-size: rem(30px);
+  color: $light-blue;
+}
+samp  {
+  font-family: monospace;
+}
+cite, dfn, var {
+  font-style: italic;
+}
