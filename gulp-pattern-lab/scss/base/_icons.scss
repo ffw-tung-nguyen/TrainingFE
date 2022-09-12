@@ -34,3 +34,9 @@
     content: $icon-star;
   }
 }
+
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}

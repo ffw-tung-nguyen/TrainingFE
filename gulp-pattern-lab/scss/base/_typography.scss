@@ -10,119 +10,139 @@ h6 {
   font-weight: 500;
   @include gilroy();
   color: $dark-gray;
-  margin-bottom: rem(30px);
 }
 
 h1,
 .h1 {
   font-size: rem(49.5px);
 
-  @include susy-media(desktop) {
+  @include susy-media(tablet) {
     font-size: rem(54px)
   }
 }
 
 h2,
 .h2 {
-  font-size: rem(20px);
-  letter-spacing: rem(.75px);
+  font-size: rem(32px);
 
-  @include susy-media(desktop) {
+  @include susy-media(tablet) {
     font-size: rem(42px);
-    letter-spacing: 0;
   }
 }
 
 h3,
 .h3 {
-  font-size: rem(32px);
+  font-size: rem(18px);
+
+  @include susy-media(tablet) {
+    font-size: rem(26px);
+  }
 }
 
 h4,
 .h4 {
-  font-size: rem(30px);
+  font-size: rem(16px);
+
+  @include susy-media(tablet) {
+    font-size: rem(30px);
+  }
 }
 
 h5,
 .h5 {
-  font-size: rem(26px);
+  font-size: rem(14px);
+
+  @include susy-media(tablet) {
+    font-size: rem(26px);
+  }
 }
 
 h6,
 .h6 {
-  font-size: rem(22px);
+  font-size: rem(13px);
+
+  @include susy-media(tablet) {
+    font-size: rem(22px);
+  }
 }
 
-
-.list{
-  ol{
-    padding-left: 20px;
-
-    li{
-      list-style-type:decimal;
+// List
+%list,
+.list {
+  &--ol {
+    li {
+      list-style-type: decimal;
     }
   }
-  ul{
-    li{
+
+  &--ul {
+    li {
       position: relative;
       padding-left: rem(34px);
       margin-bottom: rem(13px);
       line-height: rem(30px);
+  
       &:before{
         content:"";
-        background-color:$black;
+        background: $text-color;
         width: rem(3px);
         height: rem(3px);
         top: rem(10px);
-        position:absolute;
+        position: absolute;
         left:0;
-        display:inline-block;
+        display: inline-block;
         border-radius: 100%;
       }
     }
   }
 }
 
-a {
-  color: $blue;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  font-size: rem(17px);
-
-  &:hover,
-  &.hover {
-    opacity: .8;
-    text-decoration: none;
+.list-wrap {
+  ul {
+    @extend .list--ul;
   }
-
-  &:active,
-  &.active {
-    opacity: .8;
+  ol {
+    @extend .list--ol;
   }
 }
 
+// Link
+%link {
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: rem(17px);
+  display: inline-block;
+
+  &:hover,
+  &:hover,
+  &:focus {
+    color: darken(#3681D7, 20%);
+  }
+}
+
+a {
+  @extend %link;
+}
+
 .link {
-  @extend a;
-  position: relative;
+  @extend %link;
 
   &--arrow-right {
     &:after {
       @include iconmoon;
       content: $icon-right-arrow;
-      position: absolute;
+      position: relative;
       margin-left: rem(17px);
       font-size: rem(22px);
-      top: rem(-7px);
       font-weight: 600;
-      color: $blue;
+      color: $primary-color;
+      vertical-align: middle
     }
   }
 
   &--arrow-left {
-    letter-spacing: rem(1px);
     font-size: rem(14px);
 
     &:before {
@@ -130,16 +150,38 @@ a {
       content: $icon-left-arrow;
       font-size: rem(14px);
       margin-right: rem(10px);
+      vertical-align: middle
+    }
+  }
+
+  &--gray {
+    color: $gray;
+
+    &:hover {
+      color: $primary-color;
     }
   }
 
   &--dark-gray {
     color: $dark-gray;
-    font-weight: 400;
 
     &:hover {
-      color: $blue;
+      color: $primary-color;
     }
+  }
+}
+
+.block-quote,
+blockquote {
+  @include libreBaskerville;
+
+  &:before {
+    @include iconmoon;
+    content: $icon-quote;
+    display: block;
+    color: $light-blue;
+    margin-bottom: rem(27px);
+    font-style: normal;
   }
 }
 
@@ -150,28 +192,32 @@ sub, sup {
   line-height: 0;
   vertical-align: baseline;
 }
+
 sup {
   top: rem(-5px);
 }
+
 sub {
   bottom: rem(-5px);
 }
+
 small {
   font-size: rem(14px);
 }
+
 abbr {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
+
 kbd {
   padding: rem(5px) rem(10px);
   color: $white;
   background-color: $black;
   border-radius: rem(5px);
 }
+
 q {
   quotes: unset;
   display: inline;
@@ -182,13 +228,8 @@ q {
     content: close-quote;
   }
 }
-code {
-  font-size: rem(30px);
-  color: $light-blue;
-}
+
+code,
 samp  {
   font-family: monospace;
-}
-cite, dfn, var {
-  font-style: italic;
 }

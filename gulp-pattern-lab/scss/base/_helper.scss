@@ -1,103 +1,105 @@
 .text {
-    &--white {
-        color: $white;
-    }
+  &--white {
+      color: $white;
+  }
 
-    &--blue {
-        color: $blue;
-    }
+  &--blue {
+      color: $blue;
+  }
 
-    &--bold {
-        font-weight: 700;
-    }
+  &--bold {
+      font-weight: 700;
+  }
 
-    &--semibold {
-        font-weight: 600;
-    }
+  &--semibold {
+      font-weight: 600;
+  }
 
-    &--medium {
-        font-weight: 500;
-    }
+  &--medium {
+      font-weight: 500;
+  }
 
-    &--italic {
-        font-style: italic;
-    }
+  &--italic {
+      font-style: italic;
+  }
 }
 
 .font {
-    &--large {
-        font-size: rem(22px);
-    }
+  &--large {
+    font-size: rem(16px);
 
-    &--medium {
-        font-size: rem(20px);
+    @include susy-media(tablet) {
+      font-size: rem(22px);
     }
+  }
 
-    &--nor {
-        font-size: rem(18px)
-    }
+  &--medium {
+    font-size: rem(14px);
 
-    &--small {
-        font-size: rem(14px);
+    @include susy-media(tablet) {
+      font-size: rem(20px);
     }
+  }
+
+  &--small {
+    font-size: rem(10px);
+
+    @include susy-media(tablet) {
+      font-size: rem(14px);
+    }
+  }
 }
 
 .link {
-    &--blue {
-        color: $blue;
+  &--blue {
+    color: $primary-color;
 
-        &:hover {
-            color: $light-blue;
-        }
+    &:hover {
+        color: darken(#3681D7, 20%);
     }
+  }
 
-    &--white {
-        color: $white;
+  &--white {
+    color: $white;
 
-        &:hover {
-            color: $gray;
-        }
+    &:hover {
+        color: $gray;
     }
+  }
 
-    &--arrow {
-        &:after {
-            content: $icon-right-arrow;
-        }
+  &--arrow {
+    &:after {
+        content: $icon-right-arrow;
     }
-}
-
-.border {
-    &--white {
-        border: rem(3px) solid $white;
-    }
+  }
 }
 
 .bg {
-    &--dark-gray {
-        background-color: $dark-gray;
+  &--dark-gray {
+    background-color: $dark-gray;
 
-        .link--arrow-right {
-            color: $white;
+    .link--arrow-right {
+      color: $white;
 
-            &:hover {
-                color: #cccccc;
-            }
+      &:hover {
+        color: #cccccc;
+      }
 
-            &:after {
-                color: $white;
+      &:after {
+        color: $white;
 
-                &:hover {
-                    color: #cccccc;
-                }
-            }
+        &:hover {
+            color: #cccccc;
         }
+      }
     }
+  }
 
-    &--blue {
-        background-image: radial-gradient(circle at 0 0,#1381d7,#1ad6f5);;
-    }
+  &--blue {
+    background-color: darken(#3681D7, 20%);
+  }
 
-    &--light-gray {
-        background-color: $light-gray;
-    }
+  &--light-gray {
+    background-color: $light-gray;
+  }
 }

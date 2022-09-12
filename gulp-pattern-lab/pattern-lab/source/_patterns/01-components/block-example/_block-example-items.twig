@@ -1,5 +1,3 @@
-<div class="block-example__items text--center">
-  {% for item in items %}
-    <div class="block-example__item">{{ item.content }}</div>
-  {% endfor %}
-</div>
+{% for item in items %}
+  <div class="block-example__item">{{ item.content }}</div>
+{% endfor %}

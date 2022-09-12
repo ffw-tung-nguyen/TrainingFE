@@ -1,41 +1,47 @@
 .btn {
-    font-family: "Gilroy", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    background-color: $blue;
-    border: rem(1px) solid $blue;
-    color: $white;
-    cursor: pointer;
-    display: inline-block;
-    padding: rem(9px) rem(27px);
-    text-decoration: none;
-    text-align: center;
+  @include gilroy;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: $primary-color;
+  border: rem(1px) solid $primary-color;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  padding: rem(14px) rem(35px);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+
+  &:active,
+  &:hover {
+    background-color: darken(#3681D7, 20%);
+    border: rem(1px) solid $white;
+    color: $white
+  }
+
+  @include susy-media(tablet) {
+    width: auto;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: rem(3px) solid $white;
 
     &:active,
     &:hover {
-      background-image: radial-gradient(circle at 0 0, #1481d7, #1ad6f5);
-      border: rem(1px) solid $white;
-    }
-
-    &--transparent {
-      background-color: transparent;
       border: rem(3px) solid $white;
-
-      &:active,
-      &:hover {
-        border: rem(3px) solid $white;
-      }
     }
+  }
 
-    &--radius {
-        border-radius: rem(50px);
-    }
+  &--radius {
+    border-radius: rem(50px);
+  }
 
-    &--small {
-        padding: rem(5px) rem(20px);
-    }
+  &--small {
+    padding: rem(5px) rem(20px);
+  }
 
-    &--large {
-      min-width: rem(250px);
-    }
+  &--large {
+    min-width: rem(250px);
+  }
 }

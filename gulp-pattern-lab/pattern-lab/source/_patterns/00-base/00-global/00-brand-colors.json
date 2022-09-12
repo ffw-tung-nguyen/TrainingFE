@@ -84,18 +84,6 @@
           },
           "only": true
         }
-      },
-      {
-        "include()": {
-          "pattern": "base-colors-item",
-          "with": {
-            "item": {
-              "name": "$pigeon-post",
-              "id": "#aec9de"
-            }
-          },
-          "only": true
-        }
       }
     ]
   }

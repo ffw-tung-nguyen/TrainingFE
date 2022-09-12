@@ -2,6 +2,12 @@
 // Import all webfonts here
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 
+// ProximaNova Fonts
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Bold, 700, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-SemiBold, 600, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Medium, 500, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Regular, 400, normal);
+
 // Gilroy Fonts
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Black, 900, normal);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Bold, 700, normal);
@@ -12,12 +18,6 @@
 
 // LibreBaskerville-Italic Fonts
 @include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Italic, 400, italic);
-
-// ProximaNova Fonts
-@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Bold, 700, normal);
-@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-SemiBold, 600, normal);
-@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Medium, 500, normal);
-@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Regular, 400, normal);
 
 // Icomoon fonts
 @include font-face(iconmoon, fonts/Iconmoon/iconmoon, 400, normal);
