@@ -4,7 +4,6 @@ input[type='submit'] {
 }
 
 %form-text {
-  @include gilroy;
   font-size: rem(14px);
   font-weight: 400;
   border: rem(1px) solid $gray;
@@ -61,10 +60,6 @@ textarea {
 select {
   @extend %form-text;
   padding: rem(16px);
-
-  &::-ms-expand{
-    display: none;
-  }
 
   option {
     font-weight: 400;

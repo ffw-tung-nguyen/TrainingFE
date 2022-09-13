@@ -219,8 +219,8 @@ embed {
 
 .container {
   max-width: 100%;
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
+  margin-left: 0.55556rem;
+  margin-right: 0.55556rem;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 74.57627%, transparent 74.57627%);
   background-size: 26.69683%;
   background-origin: content-box;
@@ -230,11 +230,11 @@ embed {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 48em) {
+  @media (min-width: 42.66667em) {
     .container {
       max-width: 100%;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
+      margin-left: 2.22222rem;
+      margin-right: 2.22222rem;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 60.82474%, transparent 60.82474%);
       background-size: 13.14363%;
       background-origin: content-box;
@@ -244,11 +244,11 @@ embed {
         content: " ";
         display: block;
         clear: both; } }
-  @media (min-width: 64em) {
+  @media (min-width: 56.88889em) {
     .container {
       max-width: 100%;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
+      margin-left: 2.22222rem;
+      margin-right: 2.22222rem;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 63.26531%, transparent 63.26531%);
       background-size: 8.59649%;
       background-origin: content-box;
@@ -292,69 +292,67 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 3.09375rem; }
-  @media (min-width: 48em) {
+  font-size: 2.75rem; }
+  @media (min-width: 42.66667em) {
     h1,
     .h1 {
-      font-size: 3.375rem; } }
+      font-size: 3rem; } }
 
 h2,
 .h2 {
-  font-size: 2rem; }
-  @media (min-width: 48em) {
+  font-size: 1.77778rem; }
+  @media (min-width: 42.66667em) {
     h2,
     .h2 {
-      font-size: 2.625rem; } }
+      font-size: 2.33333rem; } }
 
 h3,
 .h3 {
-  font-size: 1.125rem; }
-  @media (min-width: 48em) {
+  font-size: 1rem; }
+  @media (min-width: 42.66667em) {
     h3,
     .h3 {
-      font-size: 1.625rem; } }
+      font-size: 2rem; } }
 
 h4,
 .h4 {
-  font-size: 1rem; }
-  @media (min-width: 48em) {
+  font-size: 0.88889rem; }
+  @media (min-width: 42.66667em) {
     h4,
     .h4 {
-      font-size: 1.875rem; } }
+      font-size: 1.66667rem; } }
 
 h5,
 .h5 {
-  font-size: 0.875rem; }
-  @media (min-width: 48em) {
+  font-size: 0.77778rem; }
+  @media (min-width: 42.66667em) {
     h5,
     .h5 {
-      font-size: 1.625rem; } }
+      font-size: 1.33333rem; } }
 
 h6,
 .h6 {
-  font-size: 0.8125rem; }
-  @media (min-width: 48em) {
+  font-size: 0.72222rem; }
+  @media (min-width: 42.66667em) {
     h6,
     .h6 {
-      font-size: 1.375rem; } }
+      font-size: 1rem; } }
 
 
+.list--ul li, .list-wrap ul li,
 .list--ol li, .list-wrap ol li {
-  list-style-type: decimal; }
-
-
-.list--ul li, .list-wrap ul li {
   position: relative;
-  padding-left: 2.125rem;
-  margin-bottom: 0.8125rem;
-  line-height: 1.875rem; }
+  padding-left: 1.88889rem;
+  margin-bottom: 0.72222rem;
+  line-height: 1.66667rem; }
   
-  .list--ul li:before, .list-wrap ul li:before {
+  .list--ul li:before, .list-wrap ul li:before,
+  .list--ol li:before, .list-wrap ol li:before {
     content: "";
     background: #727272;
-    width: 0.1875rem;
-    height: 0.1875rem;
-    top: 0.625rem;
+    width: 0.16667rem;
+    height: 0.16667rem;
+    top: 0.55556rem;
     position: absolute;
     left: 0;
     display: inline-block;
@@ -365,7 +363,7 @@ a, .link {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 1.0625rem;
+  font-size: 0.94444rem;
   display: inline-block; }
   a:hover, .link:hover, a:hover, .link:hover, a:focus, .link:focus {
     color: #1c508b; }
@@ -374,19 +372,19 @@ a, .link {
   font-family: "iconmoon", sans-serif;
   content: "";
   position: relative;
-  margin-left: 1.0625rem;
-  font-size: 1.375rem;
+  margin-left: 0.94444rem;
+  font-size: 1.22222rem;
   font-weight: 600;
   color: #3681D7;
   vertical-align: middle; }
 
 .link--arrow-left {
-  font-size: 0.875rem; }
+  font-size: 0.77778rem; }
   .link--arrow-left:before {
     font-family: "iconmoon", sans-serif;
     content: "";
-    font-size: 0.875rem;
-    margin-right: 0.625rem;
+    font-size: 0.77778rem;
+    margin-right: 0.55556rem;
     vertical-align: middle; }
 
 .link--gray {
@@ -408,7 +406,7 @@ blockquote {
     content: "";
     display: block;
     color: #6ED7F5;
-    margin-bottom: 1.6875rem;
+    margin-bottom: 1.5rem;
     font-style: normal; }
 
 sub, sup {
@@ -418,13 +416,13 @@ sub, sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.3125rem; }
+  top: -0.27778rem; }
 
 sub {
-  bottom: -0.3125rem; }
+  bottom: -0.27778rem; }
 
 small {
-  font-size: 0.875rem; }
+  font-size: 0.77778rem; }
 
 abbr {
   text-decoration: underline dotted;
@@ -432,10 +430,10 @@ abbr {
   text-decoration-skip-ink: none; }
 
 kbd {
-  padding: 0.3125rem 0.625rem;
+  padding: 0.27778rem 0.55556rem;
   color: #fff;
   background-color: #000;
-  border-radius: 0.3125rem; }
+  border-radius: 0.27778rem; }
 
 q {
   quotes: unset;
@@ -451,15 +449,13 @@ samp {
 
 .btn, button,
 input[type='submit'] {
-  font-family: "Gilroy", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.11111rem;
   background-color: #3681D7;
-  border: 0.0625rem solid #3681D7;
+  border: 0.05556rem solid #3681D7;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  padding: 0.875rem 2.1875rem;
+  padding: 0.77778rem 1.94444rem;
   text-decoration: none;
   text-align: center;
   width: 100%; }
@@ -467,23 +463,23 @@ input[type='submit'] {
   input[type='submit']:active, .btn:hover, button:hover,
   input[type='submit']:hover {
     background-color: #1c508b;
-    border: 0.0625rem solid #fff;
+    border: 0.05556rem solid #fff;
     color: #fff; }
-  @media (min-width: 48em) {
+  @media (min-width: 42.66667em) {
     .btn, button,
     input[type='submit'] {
       width: auto; } }
   .btn--transparent {
     background-color: transparent;
-    border: 0.1875rem solid #fff; }
+    border: 0.16667rem solid #fff; }
     .btn--transparent:active, .btn--transparent:hover {
-      border: 0.1875rem solid #fff; }
+      border: 0.16667rem solid #fff; }
   .btn--radius {
-    border-radius: 3.125rem; }
+    border-radius: 2.77778rem; }
   .btn--small {
-    padding: 0.3125rem 1.25rem; }
+    padding: 0.27778rem 1.11111rem; }
   .btn--large {
-    min-width: 15.625rem; }
+    min-width: 13.88889rem; }
 
 input[type="text"],
 input[type="number"],
@@ -494,10 +490,9 @@ input[type="email"],
 input[type="password"],
 input[type="hidden"], .form-textarea,
 textarea, select {
-  font-family: "Gilroy", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.77778rem;
   font-weight: 400;
-  border: 0.0625rem solid #727272;
+  border: 0.05556rem solid #727272;
   color: #727272;
   -webkit-appearance: none;
           appearance: none;
@@ -507,8 +502,8 @@ textarea, select {
   letter-spacing: 0;
   cursor: pointer;
   line-height: 1.4;
-  padding: 0.25rem;
-  margin: 0.125rem 0;
+  padding: 0.22222rem;
+  margin: 0.11111rem 0;
   width: 100%; }
   input[type="text"]:active,
   input[type="number"]:active,
@@ -535,34 +530,32 @@ textarea, select {
   input[type="password"]:visited,
   input[type="hidden"]:visited, .form-textarea:visited,
   textarea:visited, select:visited {
-    border: 0.125rem solid #2d2d2d; }
+    border: 0.11111rem solid #2d2d2d; }
 
 .form-textarea,
 textarea {
   height: auto;
-  min-height: 9.375rem;
+  min-height: 8.33333rem;
   resize: none; }
 
 .form-item,
 .form-actions {
-  margin: 0rem 0rem 1.625rem; }
+  margin: 0rem 0rem 1.44444rem; }
   .form-item.form-type-checkbox, .form-item.form-type-radio,
   .form-actions.form-type-checkbox,
   .form-actions.form-type-radio {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.44444rem; }
 
 select {
-  padding: 1rem; }
-  select::-ms-expand {
-    display: none; }
+  padding: 0.88889rem; }
   select option {
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.66667rem;
     letter-spacing: 0;
     color: #727272; }
 
 table {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.83333rem;
   width: 100%; }
   @media (min-width: 1024px) {
     table {
@@ -570,9 +563,9 @@ table {
 
 td,
 th {
-  border: 0.0625rem solid #2d2d2d;
-  min-width: 7.5rem;
-  padding: 0.625rem 1.125rem;
+  border: 0.05556rem solid #2d2d2d;
+  min-width: 6.66667rem;
+  padding: 0.55556rem 1rem;
   vertical-align: top; }
 
 th {
@@ -593,26 +586,29 @@ th {
 .text--medium {
   font-weight: 500; }
 
-.text--italic {
-  font-style: italic; }
-
 .font--large {
-  font-size: 1rem; }
-  @media (min-width: 48em) {
+  font-size: 0.88889rem; }
+  @media (min-width: 42.66667em) {
     .font--large {
-      font-size: 1.375rem; } }
+      font-size: 1.22222rem; } }
 
 .font--medium {
-  font-size: 0.875rem; }
-  @media (min-width: 48em) {
+  font-size: 0.77778rem; }
+  @media (min-width: 42.66667em) {
     .font--medium {
-      font-size: 1.25rem; } }
+      font-size: 1.11111rem; } }
 
 .font--small {
-  font-size: 0.625rem; }
-  @media (min-width: 48em) {
+  font-size: 0.55556rem; }
+  @media (min-width: 42.66667em) {
     .font--small {
-      font-size: 0.875rem; } }
+      font-size: 0.77778rem; } }
+
+.font--gilroy {
+  font-family: Gilroy; }
+
+.font--italic {
+  font-style: italic; }
 
 .link--blue {
   color: #3681D7; }
@@ -623,9 +619,6 @@ th {
   color: #fff; }
   .link--white:hover {
     color: #727272; }
-
-.link--arrow:after {
-  content: ""; }
 
 .bg--dark-gray {
   background-color: #2d2d2d; }
@@ -655,31 +648,31 @@ th {
 html {
   font-family: "ProximaNova", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #727272; }
 
 body {
-  font-size: 0.75rem; }
+  font-size: 0.66667rem; }
   body:after {
     background-color: rgba(174, 201, 222, 0.75);
     border-radius: 20px;
-    bottom: 1.25rem;
+    bottom: 1.11111rem;
     box-shadow: 0 1px 10px #727272;
     color: #000;
     content: 'Mobile';
     display: block;
-    font-size: 1rem;
-    padding: 0.3125rem 0.625rem;
+    font-size: 0.88889rem;
+    padding: 0.27778rem 0.55556rem;
     position: fixed;
-    right: 1.25rem;
+    right: 1.11111rem;
     z-index: 1000; }
-    @media (min-width: 48em) {
+    @media (min-width: 42.66667em) {
       body:after {
         content: 'Tablet' !important; } }
-    @media (min-width: 64em) {
+    @media (min-width: 56.88889em) {
       body:after {
         content: 'Small desktop' !important; } }
-  @media (min-width: 48em) {
+  @media (min-width: 42.66667em) {
     body {
-      font-size: 1.125rem; } }
+      font-size: 1rem; } }

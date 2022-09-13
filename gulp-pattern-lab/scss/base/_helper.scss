@@ -18,10 +18,6 @@
   &--medium {
       font-weight: 500;
   }
-
-  &--italic {
-      font-style: italic;
-  }
 }
 
 .font {
@@ -48,6 +44,14 @@
       font-size: rem(14px);
     }
   }
+
+  &--gilroy {
+    font-family: Gilroy;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
 }
 
 .link {
@@ -64,12 +68,6 @@
 
     &:hover {
         color: $gray;
-    }
-  }
-
-  &--arrow {
-    &:after {
-        content: $icon-right-arrow;
     }
   }
 }

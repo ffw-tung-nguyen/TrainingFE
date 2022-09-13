@@ -1,7 +1,5 @@
 .btn {
-  @include gilroy;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: rem(20px);
   background-color: $primary-color;
   border: rem(1px) solid $primary-color;
   color: $white;

@@ -35,7 +35,7 @@ h3,
   font-size: rem(18px);
 
   @include susy-media(tablet) {
-    font-size: rem(26px);
+    font-size: rem(36px);
   }
 }
 
@@ -53,7 +53,7 @@ h5,
   font-size: rem(14px);
 
   @include susy-media(tablet) {
-    font-size: rem(26px);
+    font-size: rem(24px);
   }
 }
 
@@ -62,20 +62,15 @@ h6,
   font-size: rem(13px);
 
   @include susy-media(tablet) {
-    font-size: rem(22px);
+    font-size: rem(18px);
   }
 }
 
 // List
 %list,
 .list {
+  &--ul,
   &--ol {
-    li {
-      list-style-type: decimal;
-    }
-  }
-
-  &--ul {
     li {
       position: relative;
       padding-left: rem(34px);

@@ -16,7 +16,7 @@ $column-tablet: 8;
 $column-desktop: 12;
 
 //Font variables
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 1.6;
 
 // Add global paths
@@ -40,7 +40,7 @@ $susy: (
   container-position: rem($container-margin),
   container: auto,
   columns: $column-mobile,
-  gutters: 11px / 44px,
+  gutters: 15px / 44px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -51,10 +51,10 @@ $susy: (
 );
 
 $susy-tablet: (
-  container-position: rem($container-margin * 2),
+  container-position: rem($container-margin * 4),
   container: auto,
   columns: $column-tablet,
-  gutters: 8px / 40px,
+  gutters: 38px / 59px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -67,7 +67,7 @@ $susy-tablet: (
 $susy-desktop: (
   columns: $column-desktop,
   gutters: 36px / 62px,
-  container-position: rem($container-desktop-margin),
+  container-position: rem($container-margin * 4),
   container: auto,
   debug: (
     image: $show-image,
@@ -80,21 +80,8 @@ $susy-desktop: (
 $susy-desktop-wide: (
   columns: $column-desktop,
   gutters: 36px / 62px,
-  container-position: center,
-  container: $container-desktop-wide,
-  debug: (
-    image: $show-image,
-    color: rgba($silver, .25),
-    output: background,
-    toggle: top right,
-  ),
-);
-
-$susy-desktop-superwide: (
-  columns: $column-desktop,
-  gutters: 40px / 62px,
-  container-position: center,
-  container: $container-desktop-wide,
+  container-position: rem($container-margin * 4),
+  container: auto,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -108,28 +95,28 @@ $susy-media: (
   // max-width: 769px
   mobileOnly: (
     media: screen,
-    max-width: rem($tablet - 1) * 1rem,
+    max-width: em($tablet - 1) * 1em,
   ),
 
   // max-width: 1999px
   mobileTabletOnly: (
     media: screen,
-    max-width: rem($desktop - 1) * 1rem,
+    max-width: em($desktop - 1) * 1em,
   ),
 
   // min-width: 480px
-  mobileLandscape: rem($mobile-landscape) * 1rem,
+  mobileLandscape: em($mobile-landscape) * 1em,
 
   // min-width: 768px and max-width: 1999px
   tabletOnly: (
     media: screen,
-    min-width: rem($tablet) * 1rem,
-    max-width: rem($desktop - 1) * 1rem,
+    min-width: em($tablet) * 1em,
+    max-width: em($desktop - 1) * 1em,
   ),
 
   // min-width: 768px
-  tablet: rem($tablet) * 1rem,
+  tablet: em($tablet) * 1em,
 
   // min-width: 1999px
-  desktop: rem($desktop) * 1rem,
+  desktop: em($desktop) * 1em,
 );
