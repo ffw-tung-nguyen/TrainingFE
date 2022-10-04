@@ -1,6 +1,106 @@
-// Navigation.
-.nav {
-  ul {
-    margin-bottom: rem(10px);
+.header {
+  &__top {
+    padding: rem(20px) 0;
+    background-color: #eee;
+  }
+
+  .menu-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    li {
+      padding: 0 rem(15px);
+
+      &:last-child {
+        padding: 0 0 0 rem(15px);
+      }
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 20%;
+  }
+
+  .main-menu {
+    @include susy-media(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      justify-content: center;
+    }
+
+    li {
+      a {
+        margin-bottom: rem(20px);
+        color: $text-color;
+
+        @include susy-media(desktop) {
+          padding-right: rem(60px);
+          font-size: rem(20px);
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child {
+        a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &__hamburger {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+
+    .black-line {
+      position: absolute;
+      top: 0.75rem;
+      left: 50%;
+      width: 1.5625rem;
+      border-bottom: 0.125rem solid #000;
+      transform: translateX(-50%);
+      transition: transform .3s;
+
+      &:nth-of-type(2) {
+        top: 1.25rem
+      }
+
+      &:nth-of-type(3) {
+        top: 1.75rem
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    align-items: center;
+  }
+
+  .icon-search {
+    padding-left: rem(20px);
+
+    span {
+      display: none;
+    }
+  }
+
+  .container {
+    background-image: none !important;
   }
 }

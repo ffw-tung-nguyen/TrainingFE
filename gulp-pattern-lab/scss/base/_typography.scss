@@ -14,7 +14,7 @@ h6 {
 
 h1,
 .h1 {
-  font-size: rem(49.5px);
+  font-size: rem(50px);
 
   @include susy-media(tablet) {
     font-size: rem(54px)
@@ -26,13 +26,13 @@ h2,
   font-size: rem(32px);
 
   @include susy-media(tablet) {
-    font-size: rem(42px);
+    font-size: rem(40px);
   }
 }
 
 h3,
 .h3 {
-  font-size: rem(18px);
+  font-size: rem(28px);
 
   @include susy-media(tablet) {
     font-size: rem(36px);
@@ -41,36 +41,35 @@ h3,
 
 h4,
 .h4 {
-  font-size: rem(16px);
+  font-size: rem(26px);
 
   @include susy-media(tablet) {
-    font-size: rem(30px);
+    font-size: rem(32px);
   }
 }
 
 h5,
 .h5 {
-  font-size: rem(14px);
+  font-size: rem(22px);
+
+  @include susy-media(tablet) {
+    font-size: rem(28px);
+  }
+}
+
+h6,
+.h6 {
+  font-size: rem(20px);
 
   @include susy-media(tablet) {
     font-size: rem(24px);
   }
 }
 
-h6,
-.h6 {
-  font-size: rem(13px);
-
-  @include susy-media(tablet) {
-    font-size: rem(18px);
-  }
-}
-
 // List
 %list,
 .list {
-  &--ul,
-  &--ol {
+  &--ul {
     li {
       position: relative;
       padding-left: rem(34px);
@@ -79,7 +78,7 @@ h6,
   
       &:before{
         content:"";
-        background: $text-color;
+        background: $gray;
         width: rem(3px);
         height: rem(3px);
         top: rem(10px);
@@ -88,6 +87,14 @@ h6,
         display: inline-block;
         border-radius: 100%;
       }
+    }
+  }
+
+  &--ol {
+    li {
+      list-style-type: decimal;
+      padding-left: rem(15px);
+      margin-bottom: rem(10px);
     }
   }
 }
@@ -111,9 +118,12 @@ h6,
   display: inline-block;
 
   &:hover,
-  &:hover,
+  &:active {
+    color: $link-hover;
+  }
+
   &:focus {
-    color: darken(#3681D7, 20%);
+    outline: rem(1px) solid $primary-color;
   }
 }
 
@@ -127,12 +137,8 @@ a {
   &--arrow-right {
     &:after {
       @include iconmoon;
-      content: $icon-right-arrow;
-      position: relative;
+      content: $icon-read-more;
       margin-left: rem(17px);
-      font-size: rem(22px);
-      font-weight: 600;
-      color: $primary-color;
       vertical-align: middle
     }
   }
@@ -143,7 +149,6 @@ a {
     &:before {
       @include iconmoon;
       content: $icon-left-arrow;
-      font-size: rem(14px);
       margin-right: rem(10px);
       vertical-align: middle
     }
@@ -155,6 +160,14 @@ a {
     &:hover {
       color: $primary-color;
     }
+
+    a {
+      color: $gray;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 
   &--dark-gray {
@@ -164,19 +177,37 @@ a {
       color: $primary-color;
     }
   }
+
+  &--blue {
+    color: $primary-color;
+  }
+
+  &--white {
+    color: $white;
+
+    &:hover {
+      color: $gray;
+    }
+  }
 }
 
 .block-quote,
 blockquote {
   @include libreBaskerville;
+  font-style: italic;
+  font-size: rem(25px);
+  display: block;
+
+  @include susy-media(tablet) {
+    font-size: rem(32px);
+  }
 
   &:before {
     @include iconmoon;
     content: $icon-quote;
-    display: block;
     color: $light-blue;
     margin-bottom: rem(27px);
-    font-style: normal;
+    font-size: rem(18px);
   }
 }
 

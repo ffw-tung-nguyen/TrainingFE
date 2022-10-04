@@ -65,6 +65,11 @@
                 },
                 "only": true
               }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-banner"
+              }
             }
           ]
         }

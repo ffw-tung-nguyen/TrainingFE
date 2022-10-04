@@ -1,20 +1,23 @@
 .btn {
   font-size: rem(20px);
-  background-color: $primary-color;
-  border: rem(1px) solid $primary-color;
+  background-color: $btn-color;
+  font-weight: 600;
   color: $white;
   cursor: pointer;
   display: inline-block;
   padding: rem(14px) rem(35px);
-  text-decoration: none;
   text-align: center;
   width: 100%;
+  border: 1px solid $btn-color;
 
   &:active,
   &:hover {
-    background-color: darken(#3681D7, 20%);
-    border: rem(1px) solid $white;
+    background-color: $btn-hover;
     color: $white
+  }
+
+  &:focus {
+    outline: rem(1px) solid $dark-gray;
   }
 
   @include susy-media(tablet) {
@@ -36,7 +39,7 @@
   }
 
   &--small {
-    padding: rem(5px) rem(20px);
+    padding: rem(5px) rem(17px);
   }
 
   &--large {

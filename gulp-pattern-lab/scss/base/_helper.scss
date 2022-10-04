@@ -1,22 +1,26 @@
 .text {
   &--white {
-      color: $white;
+    color: $white;
   }
 
   &--blue {
-      color: $blue;
+    color: $primary-color;
   }
 
   &--bold {
-      font-weight: 700;
+    font-weight: 700;
   }
 
   &--semibold {
-      font-weight: 600;
+    font-weight: 600;
   }
 
   &--medium {
-      font-weight: 500;
+    font-weight: 500;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
   }
 }
 
@@ -54,24 +58,6 @@
   }
 }
 
-.link {
-  &--blue {
-    color: $primary-color;
-
-    &:hover {
-        color: darken(#3681D7, 20%);
-    }
-  }
-
-  &--white {
-    color: $white;
-
-    &:hover {
-        color: $gray;
-    }
-  }
-}
-
 .bg {
   &--dark-gray {
     background-color: $dark-gray;
@@ -82,14 +68,6 @@
       &:hover {
         color: #cccccc;
       }
-
-      &:after {
-        color: $white;
-
-        &:hover {
-            color: #cccccc;
-        }
-      }
     }
   }
 
@@ -99,5 +77,22 @@
 
   &--light-gray {
     background-color: $light-gray;
+  }
+}
+
+.hidden {
+  &--desktop {
+    display: block;
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+  &--mobile {
+    display: none;
+    
+    @include susy-media(desktop) {
+      display: inherit;
+    }
   }
 }

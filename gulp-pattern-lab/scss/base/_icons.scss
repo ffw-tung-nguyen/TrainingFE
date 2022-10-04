@@ -29,6 +29,12 @@
   }
 }
 
+.icon-read-more {
+  &:before {
+    content: $icon-read-more;
+  }
+}
+
 .icon-star {
   &:before {
     content: $icon-star;
@@ -38,5 +44,35 @@
 .icon-check {
   &:before {
     content: $icon-check;
+  }
+}
+
+.icon-read-more {
+  &:before {
+    content: $icon-read-more;
+  }
+}
+
+.icon-search {
+  &:before {
+    content: $icon-search2;
+  }
+}
+
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
   }
 }

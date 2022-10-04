@@ -4,25 +4,14 @@ input[type='submit'] {
 }
 
 %form-text {
-  font-size: rem(14px);
-  font-weight: 400;
   border: rem(1px) solid $gray;
   color: $text-color;
-  appearance: none;
-  border-radius: 0;
-  box-shadow: inherit;
-  box-sizing: border-box;
-  letter-spacing: 0;
   cursor: pointer;
-  line-height: 1.4;
-  padding: rem(4px);
-  margin: rem(2px) 0;
   width: 100%;
+  padding: rem(18px);
 
-  &:active,
-  &:focus,
-  &:visited {
-    border: rem(2px) solid $dark-gray;
+  &:focus {
+    outline: rem(1px) solid $link-color;
   }
 }
 
@@ -42,29 +31,29 @@ input[type="hidden"] {
 .form-textarea,
 textarea {
   @extend %form-text;
-  height: auto;
   min-height: rem(150px);
-  resize: none;
 }
 
 .form-item,
 .form-actions {
   margin:rem(0 0 26px);
+}
 
+.form-item {
   &.form-type-checkbox,
   &.form-type-radio {
     margin-bottom: rem(8px);
   }
 }
 
+.form-checkbox,
+.form-radio {
+  &:focus-visible {
+    outline: rem(2px) solid $primary-color;
+  }
+}
+
 select {
   @extend %form-text;
-  padding: rem(16px);
-
-  option {
-    font-weight: 400;
-    font-size: rem(12px);
-    letter-spacing: 0;
-    color: $text-color;
-  }
+  padding: rem(10px);
 }

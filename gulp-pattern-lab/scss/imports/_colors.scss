@@ -15,3 +15,9 @@ $light-gray: #f6f6f6;
 
 $primary-color: $blue;
 $text-color: $gray;
+
+$link-color: $primary-color;
+$link-hover: darken(#3681D7, 20%);
+
+$btn-color: $primary-color;
+$btn-hover: darken(#3681D7, 20%);

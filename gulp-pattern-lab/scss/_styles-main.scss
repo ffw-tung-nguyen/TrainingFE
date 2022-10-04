@@ -12,7 +12,8 @@
 @import 'imports/variables';
 @import 'imports/icons-variables';
 @import 'imports/mixins';
-@import 'components/Grid-responsive-position';
+// @import 'components/Grid-responsive-position';
+@import 'components/block-banner-slider';
 
 // Reset
 @import 'base/reset';
@@ -32,4 +33,5 @@
 
 // Layouts
 @import 'layouts/layout';
-// @import 'layouts/navigation';
+@import 'layouts/navigation';
+@import 'layouts/footer';
