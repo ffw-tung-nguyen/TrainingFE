@@ -13,7 +13,8 @@
 @import 'imports/icons-variables';
 @import 'imports/mixins';
 // @import 'components/Grid-responsive-position';
-@import 'components/block-banner-slider';
+// @import 'components/block-banner-slider';
+@import 'components/block-social';
 
 // Reset
 @import 'base/reset';
@@ -35,3 +36,8 @@
 @import 'layouts/layout';
 @import 'layouts/navigation';
 @import 'layouts/footer';
+
+// Lib
+// @import 'lib/slick.scss';
+// @import 'lib/slick-theme.scss';
+// @import 'lib/over-ride.scss';

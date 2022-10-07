@@ -1,0 +1,27 @@
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+@import '../imports/icons-variables';
+
+.block-social {
+  text-align: center;
+
+  @include susy-media(desktop) {
+    text-align: inherit;
+  }
+
+  a {
+    margin: 0 rem(20px);
+
+    @include susy-media(desktop) {
+      margin-right: rem(35px);
+      margin-left: 0;
+
+    &:last-child() {
+      margin-right: 0;
+      }
+    }
+  }
+}

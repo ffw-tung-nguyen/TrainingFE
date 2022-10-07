@@ -1,0 +1,13 @@
+.block-social {
+  text-align: center; }
+  @media (min-width: 64rem) {
+    .block-social {
+      text-align: inherit; } }
+  .block-social a {
+    margin: 0 1.25rem; }
+    @media (min-width: 64rem) {
+      .block-social a {
+        margin-right: 2.1875rem;
+        margin-left: 0; }
+        .block-social a:last-child() {
+          margin-right: 0; } }

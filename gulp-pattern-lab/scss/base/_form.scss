@@ -10,7 +10,7 @@ input[type='submit'] {
   width: 100%;
   padding: rem(18px);
 
-  &:focus {
+  &:focus-visible {
     outline: rem(1px) solid $link-color;
   }
 }
@@ -36,7 +36,7 @@ textarea {
 
 .form-item,
 .form-actions {
-  margin:rem(0 0 26px);
+  margin:rem(0 0 10px);
 }
 
 .form-item {
@@ -49,7 +49,7 @@ textarea {
 .form-checkbox,
 .form-radio {
   &:focus-visible {
-    outline: rem(2px) solid $primary-color;
+    outline: rem(1px) solid $primary-color;
   }
 }
 

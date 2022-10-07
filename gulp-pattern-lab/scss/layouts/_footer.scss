@@ -14,88 +14,62 @@
 }
 
 .footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  @include clearfix;
 
   &__item {
-    ul {  
-      li {
-        margin-bottom: rem(20px);
-        font-size: rem(14px);
-        margin-top: rem(15px);
-  
-        &:last-child() {
-          margin-bottom: 0;
-        }
+    @include susy-media(desktop) {
+      float: left;
+    }
+
+    li {
+      margin-bottom: rem(20px);
+      font-size: rem(14px);
+      margin-top: rem(15px);
+
+      &:last-child() {
+        margin-bottom: 0;
       }
     }
 
     @include susy-media(desktop) {
       width: span(2 of $susy-desktop);
-      margin-left: gutter($susy-desktop);
+      margin-right: gutter($susy-desktop);
   
-      &:nth-child(6n + 1) {
-        margin-left: 0;
-      }
-    
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6) {
-        margin-top: 0;
+      &:nth-child(6n + 6) {
+        float: right;
+        margin-right: 0;
       }
     }
   }
 }
 
 .footer-bottom {
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
   margin-top: rem(30px);
 
-  @include susy-media(desktop) {
-    margin-top: rem(50px);
-    justify-content: space-between;
-  }
-
   &__legal {
+    text-align: center;
+    margin-bottom: rem(30px);
+
     @include susy-media(desktop) {
-      margin-bottom: rem(30px);
+      @include clearfix;
+      float: left;
     }
 
-    ul {
-      li {
-        display: inline;
-        margin-right: rem(10px);
-      }
+    li {
+      display: inline;
+      margin-right: rem(10px);
     }
   }
 
-  &__coppyright {
+  &__copyright {
+    text-align:center;
+
     @include susy-media(desktop) {
-      width: span(2 of $susy-desktop);
       text-align: right;
     }
-  }
-}
 
-.block-social {
-  a {
-    margin: 0 rem(20px);
-
-    @include susy-media(desktop) {
-      margin-right: rem(35px);
-      margin-left: 0;
-
-    &:last-child() {
-      margin-right: 0;
-      }
+    span {
+      color: $text-color;
     }
   }
 }

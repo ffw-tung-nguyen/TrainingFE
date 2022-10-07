@@ -1,15 +1,15 @@
-// // Create a separate component, we need to require some variables and mixins.
-// // Required imports
-// // @import '../../vendor/susy/susy';
-// // @import '../helpers/functions';
-// // @import '../helpers/mixins';
-// // @import '../base/colors';
-// // @import '../base/variables';
-// // @import 'helpers/icons-variables';
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+// @import '../../vendor/susy/susy';
+// @import '../helpers/functions';
+// @import '../helpers/mixins';
+// @import '../base/colors';
+// @import '../base/variables';
+// @import 'helpers/icons-variables';
 
 // .block-example {
 //   padding: 100px 0;
-//   // background-color: blue;
+  // background-color: blue;
 // }
 
 
@@ -29,9 +29,9 @@
 //   </div>
 // </div>
 // */
-// // Option 1: Susy grid, items sắp xêp left to right -> float: left , float right, width và margin right theo %
+// Option 1: Susy grid, items sắp xêp left to right -> float: left , float right, width và margin right theo %
 // .block-example__grid {
-//   // @include clearfix;
+  // @include clearfix;
 // }
 
 // .block-example__item {
@@ -50,32 +50,32 @@
 //   }
 // }
 
-// // Option 2: calc + flex ,items sắp xêp left to right.-> width: calc % và margin right cố định px
-// // .block-example__grid {
-// //   display: flex;
-// //   flex-direction: row;
-// //   flex-wrap: wrap;
-// //   justify-content: flex-start;
-// //   align-content: flex-start;
-// //   align-items: flex-start;
-// // }
+// Option 2: calc + flex ,items sắp xêp left to right.-> width: calc % và margin right cố định px
+// .block-example__grid {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-content: flex-start;
+//   align-items: flex-start;
+// }
 
-// // .block-example__item {
-// //   width: calc((100% - 2*40px) / 3); // width %
-// //   margin-right: 40px; // margin right cố định px
-// //   background-color: red;
-// //   margin-top: 40px;
+// .block-example__item {
+//   width: calc((100% - 2*40px) / 3); // width %
+//   margin-right: 40px; // margin right cố định px
+//   background-color: red;
+//   margin-top: 40px;
 
-// //   &:nth-child(3n + 3) {
-// //     margin-right: 0;
-// //   }
+//   &:nth-child(3n + 3) {
+//     margin-right: 0;
+//   }
 
-// //   &:nth-child(1),
-// //   &:nth-child(2),
-// //   &:nth-child(3) {
-// //     margin-top: 0; // giữ cân đổi với padding của cha .block-example
-// //   }
-// // }
+//   &:nth-child(1),
+//   &:nth-child(2),
+//   &:nth-child(3) {
+//     margin-top: 0; // giữ cân đổi với padding của cha .block-example
+//   }
+// }
 // /*********************** End items sắp xêp left to right /***********************/
 // /********************************************************************************/
 

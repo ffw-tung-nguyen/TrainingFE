@@ -17,7 +17,7 @@
   }
 
   &:focus {
-    outline: rem(1px) solid $dark-gray;
+    outline: rem(1px) solid $link-color;
   }
 
   @include susy-media(tablet) {

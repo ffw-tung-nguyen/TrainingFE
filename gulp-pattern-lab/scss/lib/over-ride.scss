@@ -1,0 +1,54 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/_icons-variables';
+@import '../imports/mixins';
+
+.slick-arrow {
+  position: absolute;
+  background: $white;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  padding: rem(18px 17px);
+  line-height: 1;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+
+  &:before {
+    color: $black;
+    font-size: rem(12px);
+    font-weight: 700;
+    @include iconmoon;
+  }
+
+  &:hover,
+  &:focus {
+    background: white;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  bottom: -25px;
+}
+
+.slick-prev {
+  right: 50px;
+
+  &:before {
+    content: $icon-chevron-thin-left;
+  }
+}
+
+.slick-next {
+  right: 0;
+
+  &:before {
+    content: $icon-chevron-thin-right;
+  }
+}

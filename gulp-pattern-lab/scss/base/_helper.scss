@@ -7,6 +7,10 @@
     color: $primary-color;
   }
 
+  &--dark-gray {
+    color: $dark-gray;
+  }
+
   &--bold {
     font-weight: 700;
   }
@@ -26,10 +30,10 @@
 
 .font {
   &--large {
-    font-size: rem(16px);
+    font-size: rem(19px);
 
     @include susy-media(tablet) {
-      font-size: rem(22px);
+      font-size: rem(24px);
     }
   }
 
