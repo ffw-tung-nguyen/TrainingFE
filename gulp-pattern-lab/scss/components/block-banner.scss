@@ -34,7 +34,6 @@
   &__left {
     @include susy-media(desktop) {
       width: span(6 of $susy-desktop);
-      margin-right: gutter($susy-desktop);
       float: left;
     }
   }
@@ -42,13 +41,11 @@
   &__right {
     @include susy-media(desktop) {
       width: span(4 of $susy-desktop);
-      margin-right: gutter($susy-desktop);
     }
 
     &:nth-child(2n + 2) {
       @include susy-media(desktop) {
         float: right;
-        margin-right: 0;
       }
     }
   }
@@ -56,12 +53,6 @@
   &__left {
     @include susy-media(mobileTabletOnly) {
       margin-bottom: rem(42px);
-    }
-  }
-
-  &__right {
-    @include susy-media(mobileTabletOnly) {
-      width: 100%;
     }
   }
 
@@ -118,8 +109,6 @@
 
       &:after {
         color: $link-color;
-        font-size: rem(24px);
-        margin-left: rem(18px);
       }
     }
 

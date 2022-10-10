@@ -468,8 +468,9 @@ a, .link {
   speak: none;
   text-transform: none;
   content: "";
-  margin-left: 1.0625rem;
-  vertical-align: middle; }
+  margin-left: 1.125rem;
+  vertical-align: middle;
+  font-size: 1.5rem; }
 
 .link--arrow-left {
   font-size: 0.875rem; }

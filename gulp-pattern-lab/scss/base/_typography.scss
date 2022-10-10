@@ -139,8 +139,9 @@ a {
     &:after {
       @include iconmoon;
       content: $icon-read-more;
-      margin-left: rem(17px);
-      vertical-align: middle
+      margin-left: rem(18px);
+      vertical-align: middle;
+      font-size: rem(24px);
     }
   }
 
